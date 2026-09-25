@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboPet AI | Project</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter Font for clean look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navigation Bar (Exactly like CareX) -->
+    <nav class="absolute top-0 left-0 w-full z-50 py-8">
+        <div class="max-w-[1400px] mx-auto px-8 flex justify-between items-center">
+            <!-- Logo/Short Name -->
+            <h1 class="text-3xl font-light text-gray-800 tracking-wide">RoboPet AI.</h1>
+            
+            <!-- Menu Links (Hidden on small screens, visible on large screens) -->
+            <ul class="hidden xl:flex space-x-6 text-sm font-medium text-gray-700">
+                <li><a href="#home" class="hover:text-black transition">Home</a></li>
+                <li><a href="#about" class="hover:text-black transition">About</a></li>
+                <li><a href="#weekly" class="hover:text-black transition">Weekly Update</a></li>
+                <li><a href="#software" class="hover:text-black transition">Software</a></li>
+                <li><a href="#hardware" class="hover:text-black transition">Hardware</a></li>
+                <li><a href="#prototype" class="hover:text-black transition">Prototype</a></li>
+                <li><a href="#literature" class="hover:text-black transition flex items-center">Literature Review <span class="ml-1 text-xs">▼</span></a></li>
+                <li><a href="#components" class="hover:text-black transition">Component Details</a></li>
+                <li><a href="#cost" class="hover:text-black transition">Component Cost</a></li>
+                <li><a href="#presurvey" class="hover:text-black transition">Pre-survey</a></li>
+                <li><a href="#draft" class="hover:text-black transition">Draft paper</a></li>
+            </ul>
+            
+            <!-- Search Icon (Optional, just like CareX) -->
+            <div class="hidden xl:block text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Welcome Screen) -->
+    <header id="home" class="relative h-screen flex items-center justify-center">
+        <!-- Bright Cloud Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=2000&auto=format&fit=crop" alt="Cloud Background" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Centered Text -->
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <h1 class="text-6xl md:text-8xl font-light text-gray-900 mb-6 tracking-tight">
+                Welcome to RoboPet AI.
+            </h1>
+            <p class="text-lg md:text-xl font-bold text-gray-900 max-w-4xl mx-auto leading-snug">
+                Design and Development of an AI-Driven Robotic Pet for Enhanced Companion and Interactive Storytelling
+            </p>
+        </div>
+        
+        <!-- Scroll Down Arrow (Optional) -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </header>
+
+</body>
+</html>
