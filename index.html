@@ -21,21 +21,21 @@
     <nav class="absolute top-0 left-0 w-full z-50 py-4 md:py-6">
         <div class="max-w-[1400px] mx-auto px-6 flex justify-between items-center">
             <!-- Logo -->
-            <h1 class="text-2xl md:text-3xl font-light text-gray-800 tracking-wide">RoboPet AI.</h1>
+            <h1 class="text-2xl md:text-3xl font-bold text-white tracking-wide drop-shadow-md">RoboPet AI.</h1>
             
             <!-- Desktop Menu (Hidden on Mobile) -->
-            <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-                <li><a href="index.html" class="hover:text-black transition">Home</a></li>
-                <li><a href="about.html" class="hover:text-black transition">About</a></li>
-                <li><a href="weekly.html" class="hover:text-black transition">Weekly Update</a></li>
-                <li><a href="hardware.html" class="hover:text-black transition">Hardware</a></li>
-                <li><a href="software.html" class="hover:text-black transition">Software</a></li>
-                <li><a href="literature.html" class="hover:text-black transition">Literature Review</a></li>
-                <li><a href="team.html" class="hover:text-black transition">Team</a></li>
+            <ul class="hidden md:flex space-x-6 text-sm font-medium text-white drop-shadow-md">
+                <li><a href="index.html" class="hover:text-gray-300 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-300 transition">About</a></li>
+                <li><a href="weekly.html" class="hover:text-gray-300 transition">Weekly Update</a></li>
+                <li><a href="hardware.html" class="hover:text-gray-300 transition">Hardware</a></li>
+                <li><a href="software.html" class="hover:text-gray-300 transition">Software</a></li>
+                <li><a href="literature.html" class="hover:text-gray-300 transition">Literature Review</a></li>
+                <li><a href="team.html" class="hover:text-gray-300 transition">Team</a></li>
             </ul>
 
             <!-- Mobile Hamburger Button (Visible only on Mobile) -->
-            <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none drop-shadow-md">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -58,19 +58,35 @@
 
     <!-- Hero Section -->
     <header id="home" class="relative min-h-screen flex items-center justify-center pt-20 pb-10">
-        <!-- Background Image -->
+        <!-- Background Image: Robot Pet -->
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=2000&auto=format&fit=crop" alt="Cloud Background" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2000&auto=format&fit=crop" alt="RoboPet AI Background" class="w-full h-full object-cover">
+            <!-- Dark Overlay for better text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/50"></div>
         </div>
         
         <!-- Main Text -->
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-10 md:mt-16">
-            <h1 class="text-4xl md:text-6xl lg:text-8xl font-light text-gray-900 mb-4 md:mb-6 tracking-tight">
+            <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 md:mb-6 tracking-tight drop-shadow-lg">
                 Welcome to RoboPet AI.
             </h1>
-            <p class="text-base md:text-xl font-bold text-gray-900 max-w-4xl mx-auto leading-snug">
+            <p class="text-base md:text-xl font-medium text-gray-200 max-w-4xl mx-auto leading-snug drop-shadow-md">
                 Design and Development of an AI-Driven Robotic Pet for Enhanced Companion and Interactive Storytelling
             </p>
+            
+            <!-- Call to Action Button -->
+            <div class="mt-8 md:mt-10">
+                <a href="about.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                    Explore Project
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Arrow -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
         </div>
     </header>
 
