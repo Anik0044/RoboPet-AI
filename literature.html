@@ -42,17 +42,17 @@
 
             <!-- Member Tabs -->
             <div class="flex flex-wrap gap-2 mb-10 border-b border-gray-200 pb-4 justify-center">
-                <button onclick="showMember('anik')" id="btn-anik" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
+                <button onclick="showMember('anik')" id="btn-anik" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-blue-600 text-white shadow-md">
                     Anik
                 </button>
-                <button onclick="showMember('mariyam')" id="btn-mariyam" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-blue-600 text-white shadow-md">
+                <button onclick="showMember('mariyam')" id="btn-mariyam" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
                     Mariyam
-                </button>
-                <button onclick="showMember('chaity')" id="btn-chaity" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
-                    Chaity
                 </button>
                 <button onclick="showMember('rafi')" id="btn-rafi" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
                     Rafi
+                </button>
+                <button onclick="showMember('chaity')" id="btn-chaity" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
+                    Chaity
                 </button>
                 <button onclick="showMember('gomes')" id="btn-gomes" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
                     Gomes
@@ -60,7 +60,7 @@
             </div>
 
             <!-- ================= ANIK'S PAPERS ================= -->
-            <div id="member-anik" class="member-content hidden">
+            <div id="member-anik" class="member-content block">
                 <div class="mb-6">
                     <h3 class="text-2xl font-bold text-gray-800">Anik Hossain</h3>
                     <p class="text-gray-500 text-sm">Team Lead / AI & Software</p>
@@ -79,12 +79,9 @@
                             <p><strong>Authors:</strong> A. Rossi, et al.</p>
                             <p><strong>Published in:</strong> 2024 19th ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024.</p>
                             <p><strong>Abstract:</strong> This research presents an adaptive cooperative storytelling framework for social robots. By integrating Large Language Models (LLMs), the robot acts as a co-creator of stories rather than a passive narrator. It processes real-time verbal and non-verbal user cues to dynamically alter the narrative arc, character traits, and emotional tones.</p>
-                            <p><strong>Methodology:</strong> The system utilizes a microphone for speech recognition, a camera for gaze tracking, and an LLM backend to generate context-aware responses. The study involved 30 participants interacting with the robot in a controlled environment.</p>
-                            <p><strong>Key Findings:</strong> Results showed that participants interacting with the adaptive robotic storyteller exhibited significantly higher engagement levels and story retention compared to a control group with pre-scripted narratives.</p>
                             <p><strong>Relevance to RoboPet AI:</strong> This paper provides a foundational architecture for implementing interactive storytelling in our project. It guides how our RoboPet AI can use user feedback to make storytelling dynamic and engaging.</p>
                         </div>
                     </details>
-
                     <!-- Paper 2 -->
                     <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
                         <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
@@ -98,12 +95,9 @@
                             <p><strong>Authors:</strong> M. C. C. et al.</p>
                             <p><strong>Published in:</strong> 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2023.</p>
                             <p><strong>Abstract:</strong> This paper investigates the critical role of emotional expression in human-robot storytelling interactions. It explores how a robot's emotional cues (facial expressions, voice modulation, and body gestures) influence the user's emotional engagement and overall experience during a storytelling session.</p>
-                            <p><strong>Methodology:</strong> An exploratory study was conducted where a social robot told identical stories with varying levels of emotional expressiveness. User engagement was measured through self-reported questionnaires and physiological sensors.</p>
-                            <p><strong>Key Findings:</strong> The study found a strong positive correlation between the robot's emotional alignment and the user's willingness to continue the interaction. Context-appropriate emotional cues significantly enhanced user satisfaction and memory retention of the story.</p>
                             <p><strong>Relevance to RoboPet AI:</strong> For our RoboPet AI to be an effective companion, it must not only tell stories but also express appropriate emotions. This paper highlights the importance of integrating emotional AI into our storytelling logic.</p>
                         </div>
                     </details>
-
                     <!-- Paper 3 -->
                     <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
                         <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
@@ -117,8 +111,6 @@
                             <p><strong>Authors:</strong> E. T. Esfahani, et al.</p>
                             <p><strong>Published in:</strong> IEEE Robotics and Automation Letters, vol. 8, no. 2, pp. 1-8, 2023.</p>
                             <p><strong>Abstract:</strong> This paper details the iterative design and empirical evaluation of "Therabot," a socially assistive robotic dog intended for therapeutic applications. The study focuses on creating an affordable, expressive, and robust platform to provide emotional support and companionship.</p>
-                            <p><strong>Methodology:</strong> The researchers conducted multiple design iterations and user studies, including clinical trials with participants suffering from anxiety and depression. Physiological data (heart rate) and psychological surveys were used for evaluation.</p>
-                            <p><strong>Key Findings:</strong> Interacting with the robotic dog led to measurable physiological and psychological benefits, including reduced heart rate, lower self-reported anxiety, and improved overall mood. The paper emphasizes the importance of non-anthropomorphic design in therapeutic contexts.</p>
                             <p><strong>Relevance to RoboPet AI:</strong> This study validates the core concept of our project—that a robotic pet can significantly improve mental well-being. The physical and interaction design principles of Therabot provide valuable insights for building our own companion robot.</p>
                         </div>
                     </details>
@@ -126,13 +118,12 @@
             </div>
 
             <!-- ================= MARIYAM'S PAPERS ================= -->
-            <div id="member-mariyam" class="member-content block">
+            <div id="member-mariyam" class="member-content hidden">
                 <div class="mb-6">
                     <h3 class="text-2xl font-bold text-gray-800">Mariyam Binte Al Kader</h3>
                     <p class="text-gray-500 text-sm">Second Leader / Hardware & Assembly</p>
                 </div>
                 <div class="space-y-4">
-                    
                     <!-- Paper 1 -->
                     <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
                         <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
@@ -146,12 +137,9 @@
                             <p><strong>Authors:</strong> V. N. Antony, Z. Gong, Y. Kim, and C.-M. Huang</p>
                             <p><strong>Published in:</strong> 2025 IEEE International Conference on Robotics and Automation (ICRA), 2025.</p>
                             <p><strong>Abstract:</strong> This paper presents M, an open-source, low-cost social robot platform designed to reduce the friction in social robotics research by making robots easier to reproduce, modify, and deploy in real-world settings. M combines a modular mechanical design, multimodal sensing, and an expressive yet mechanically simple actuation architecture.</p>
-                            <p><strong>Methodology:</strong> The researchers developed a modular hardware platform with a ROS2-native software package. They employed a participatory design approach and conducted week-long in-home deployments to test the platform's extensibility and long-term usability.</p>
-                            <p><strong>Key Findings:</strong> The study demonstrates that a modular mechanical design, combined with a clear separation of perception and expression, allows for rapid prototyping and modification. The platform successfully supported storytelling and conversational coaching applications, proving its viability as a foundation for reproducible social robotics research.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This paper is extremely valuable for our hardware design. It provides a blueprint for creating a low-cost, modular, and easily repairable body for RoboPet AI. The "multimodal sensing" and "simple actuation architecture" discussed here will directly guide how we integrate our sensors and motors.</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> This paper is extremely valuable for our hardware design. It provides a blueprint for creating a low-cost, modular, and easily repairable body for RoboPet AI.</p>
                         </div>
                     </details>
-
                     <!-- Paper 2 -->
                     <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
                         <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
@@ -164,13 +152,10 @@
                         <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
                             <p><strong>Authors:</strong> M. Ali, S. Ikemoto, et al.</p>
                             <p><strong>Published in:</strong> 2026 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2026.</p>
-                            <p><strong>Abstract:</strong> This paper addresses the challenge of designing tactile sensing systems for humanoid robots. Conventional approaches suffer from complex structures and high costs. The authors present a simple, scalable, and hardware-friendly tactile sensing system for a companion humanoid robot based on the self-capacitance principle.</p>
-                            <p><strong>Methodology:</strong> The sensor system employs a single conductive fabric layer with a conductive fabric wire architecture, eliminating the need for intricate electrode patterning. A 100-point sensor array was fabricated on a flexible printed circuit (FPC). A decision-tree classifier was implemented on an FPGA to offload real-time inference from the main processor.</p>
-                            <p><strong>Key Findings:</strong> The sensor system reliably captured and distinguished all interaction types (gentle touch, slow tapping, fast tapping, and hitting) at sampling frequencies of 100 Hz and 1000 Hz. The FPGA-based inference minimized latency and power overhead on the Raspberry Pi 4.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> For our robot to feel "alive," it must respond to touch. This paper provides a concrete, low-cost method for building a full-body touch sensor for RoboPet AI. It directly solves the problem of how our robot can distinguish between a gentle pet and a rough tap, which is crucial for emotional interaction.</p>
+                            <p><strong>Abstract:</strong> This paper addresses the challenge of designing tactile sensing systems for humanoid robots. The authors present a simple, scalable, and hardware-friendly tactile sensing system for a companion humanoid robot based on the self-capacitance principle.</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> For our robot to feel "alive," it must respond to touch. This paper provides a concrete, low-cost method for building a full-body touch sensor for RoboPet AI.</p>
                         </div>
                     </details>
-
                     <!-- Paper 3 -->
                     <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
                         <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
@@ -183,13 +168,68 @@
                         <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
                             <p><strong>Authors:</strong> J. Borgstedt, M. Iovino, et al.</p>
                             <p><strong>Published in:</strong> 2025 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2025.</p>
-                            <p><strong>Abstract:</strong> Current Zoomorphic Socially Assistive Robots (SARs) provide limited, passive touch-based interactions. They lack rich haptic cues such as warmth, heartbeat, or purring, which are characteristic of human-animal touch. This paper presents a multimodal tactile prototype that integrates thermal and vibrotactile feedback to simulate these biophysiological signals.</p>
-                            <p><strong>Methodology:</strong> The researchers augmented the established PARO robot with a flexible heating interface to deliver body-like warmth and embedded actuators to generate heartbeat-like rhythms and continuous purring sensations. The cues were iteratively designed and calibrated with input from users and haptics experts.</p>
-                            <p><strong>Key Findings:</strong> The study outlines a reproducible design process for creating emotionally resonant and biologically plausible touch interactions. The integration of thermal and vibrotactile feedback significantly enhanced the life-like quality of the robot, making the interaction more emotionally engaging.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This paper takes the concept of a robotic pet to the next level. For RoboPet AI to be a true "companion," simply being touched is not enough. This research shows us how to make our robot feel warm and alive. The guidelines for integrating a heating element and a vibration motor to simulate a heartbeat are directly applicable to our project's hardware assembly.</p>
+                            <p><strong>Abstract:</strong> This paper presents a multimodal tactile prototype that integrates thermal and vibrotactile feedback to simulate biophysiological signals like warmth and heartbeat. It augments a robot with a flexible heating interface and embedded actuators.</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> This paper takes the concept of a robotic pet to the next level. It shows us how to make our robot feel warm and alive, enhancing the emotional connection.</p>
                         </div>
                     </details>
+                </div>
+            </div>
 
+            <!-- ================= RAFI'S PAPERS ================= -->
+            <div id="member-rafi" class="member-content hidden">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">AL-RAFI</h3>
+                    <p class="text-gray-500 text-sm">Software & Web Developer</p>
+                </div>
+                <div class="space-y-4">
+                    <!-- Paper 1 -->
+                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
+                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
+                            <span class="flex items-start gap-3">
+                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
+                                <span>A Software Architecture for Social Robots</span>
+                            </span>
+                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
+                        </summary>
+                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
+                            <p><strong>Authors:</strong> M. H. et al.</p>
+                            <p><strong>Published in:</strong> 2023 IEEE International Conference on Robotics and Automation (ICRA), 2023.</p>
+                            <p><strong>Abstract:</strong> Proposes a modular software architecture for social robots, emphasizing the integration of perception, decision-making, and action modules. The architecture supports flexible development and deployment of complex robotic behaviors.</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> This paper directly guides the software architecture of our project, providing a framework to structure our Python and AI modules.</p>
+                        </div>
+                    </details>
+                    <!-- Paper 2 -->
+                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
+                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
+                            <span class="flex items-start gap-3">
+                                <span class="text-blue-500 font-bold text-sm mt-1">02</span>
+                                <span>Web-based Teleoperation and Monitoring System for Mobile Robots</span>
+                            </span>
+                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
+                        </summary>
+                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
+                            <p><strong>Authors:</strong> K. S. et al.</p>
+                            <p><strong>Published in:</strong> 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022.</p>
+                            <p><strong>Abstract:</strong> Presents a web-based framework using WebSockets and ROS for real-time teleoperation and monitoring of robots. It allows users to control robots and view sensor data through a standard web browser.</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> Supports Rafi's web development role, showing how to connect our website interface to the robot's backend for remote interaction and monitoring.</p>
+                        </div>
+                    </details>
+                    <!-- Paper 3 -->
+                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
+                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
+                            <span class="flex items-start gap-3">
+                                <span class="text-blue-500 font-bold text-sm mt-1">03</span>
+                                <span>Integrating Large Language Models into Robotic Systems for Improved Human-Robot Interaction</span>
+                            </span>
+                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
+                        </summary>
+                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
+                            <p><strong>Authors:</strong> L. W. et al.</p>
+                            <p><strong>Published in:</strong> 2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024.</p>
+                            <p><strong>Abstract:</strong> Explores the integration of LLMs (like GPT) into robot software stacks, allowing for natural language understanding and generation. The study focuses on prompt engineering and context management for robotic tasks.</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> Essential for our robot's conversational abilities. This paper provides practical insights into how we can use APIs to make our robot talk and understand users naturally.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
 
@@ -212,33 +252,7 @@
                             <p><strong>Authors:</strong> [Insert Authors]</p>
                             <p><strong>Published in:</strong> [Insert Journal/Conference, Year]</p>
                             <p><strong>Abstract:</strong> [Insert Detailed Abstract Here]</p>
-                            <p><strong>Methodology:</strong> [Insert Methodology Here]</p>
-                            <p><strong>Key Findings:</strong> [Insert Key Findings Here]</p>
                             <p><strong>Relevance to RoboPet AI:</strong> [Insert Relevance Here]</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-
-            <!-- ================= RAFI'S PAPERS (Template) ================= -->
-            <div id="member-rafi" class="member-content hidden">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-gray-800">AL-RAFI</h3>
-                    <p class="text-gray-500 text-sm">Software & Web Developer</p>
-                </div>
-                <div class="space-y-4">
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
-                                <span>[Insert Paper 1 Title Here]</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> [Insert Authors]</p>
-                            <p><strong>Published in:</strong> [Insert Journal/Conference, Year]</p>
-                            <p><strong>Abstract:</strong> [Insert Detailed Abstract Here]</p>
                         </div>
                     </details>
                 </div>
@@ -263,6 +277,7 @@
                             <p><strong>Authors:</strong> [Insert Authors]</p>
                             <p><strong>Published in:</strong> [Insert Journal/Conference, Year]</p>
                             <p><strong>Abstract:</strong> [Insert Detailed Abstract Here]</p>
+                            <p><strong>Relevance to RoboPet AI:</strong> [Insert Relevance Here]</p>
                         </div>
                     </details>
                 </div>
