@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariyam's Literature Review | RoboPet AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .arrow { transform: rotate(180deg); }
+        details[open] { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-700">RoboPet AI.</h1>
+            <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <li><a href="index.html" class="hover:text-green-700">Home</a></li>
+                <li><a href="about.html" class="hover:text-green-700">About</a></li>
+                <li><a href="weekly.html" class="hover:text-green-700">Weekly Update</a></li>
+                <li><a href="hardware.html" class="hover:text-green-700">Hardware</a></li>
+                <li><a href="software.html" class="hover:text-green-700">Software</a></li>
+                <li><a href="literature.html" class="hover:text-green-700 font-bold text-green-700">Literature Review</a></li>
+                <li><a href="team.html" class="hover:text-green-700">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-12 min-h-screen">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <a href="literature.html" class="inline-flex items-center text-green-700 hover:text-green-900 font-medium mb-6 transition">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Literature Review
+            </a>
+
+            <!-- Profile Header -->
+            <div class="bg-white rounded-xl border border-gray-200 p-8 mb-8 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+                <div class="w-24 h-24 bg-green-50 text-green-700 rounded-full flex items-center justify-center text-3xl font-bold border-4 border-green-100">MA</div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Mariyam Binte Al Kader</h2>
+                    <p class="text-green-700 font-semibold mt-1">Second Leader / Hardware & Assembly</p>
+                    <p class="text-gray-500 text-sm mt-1">Reviewed 10 research papers on Modular Robotics, Tactile Sensors, and Thermal Feedback.</p>
+                </div>
+            </div>
+
+            <!-- Papers List -->
+            <div class="space-y-5">
+
+                <!-- ==================== PAPER 1 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">01</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Introducing M: A Modular, Modifiable Social Robot</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE ICRA 2025</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">V. N. Antony, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE ICRA</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2025</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Modular Design</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Modular Robot Circuit Board" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Modular circuit board and hardware components of a social robot.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To create a low-cost, open-source, and modular social robot platform that makes it easier for researchers to build, modify, and deploy social robots.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology (Modular Design)</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers designed the robot with a modular mechanical structure. Each part (head, body, arms) can be detached and replaced. They used ROS2 for software and validated the design through in-home deployments.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Modular Architecture</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Head Module<br><span class="text-xs text-gray-500">Camera, Mic</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">↔</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Body Module<br><span class="text-xs text-gray-500">Sensors, Motors</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">↔</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Arm Module<br><span class="text-xs text-gray-500">Servo Motors</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The modular design allowed rapid prototyping and easy modification. The platform successfully supported storytelling and conversational applications.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Development Efficiency</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Time to Add New Feature</span><span>-60%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 60%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Cost Reduction vs. Commercial Robots</span><span>-75%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 75%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper provides a blueprint for creating a low-cost, modular body for <b>RoboPet AI</b>. If a sensor or motor breaks, we can simply replace that module instead of the whole robot, making maintenance easy and affordable.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Introducing+M+A+Modular+Modifiable+Social+Robot+ICRA+2025" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Introducing%20M%20Modular%20Modifiable%20Social%20Robot" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 2 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">02</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Self Capacitive Tactile Sensor System designed for Companion Robots</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">HRI 2026</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">M. Ali, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">ACM/IEEE HRI</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2026</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Tactile Sensing</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=800&auto=format&fit=crop" alt="Tactile Sensor Circuit" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Self-capacitive tactile sensor array with flexible circuits.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To design a simple, low-cost, and scalable tactile sensing system that allows a companion robot to detect and distinguish different types of touch.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The sensor uses a single conductive fabric layer. A 100-point sensor array was fabricated on a flexible printed circuit. A decision-tree classifier on an FPGA was used to process touch data in real-time.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Touch Classification Types</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Touch Type</th><th class="px-4 py-3">Description</th><th class="px-4 py-3">Robot Response</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Gentle Touch</td><td class="px-4 py-3">Soft, slow petting</td><td class="px-4 py-3 text-green-600">Happy, purring</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Slow Tap</td><td class="px-4 py-3">Light tapping</td><td class="px-4 py-3 text-blue-600">Curious, alert</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Fast Tap</td><td class="px-4 py-3">Quick tapping</td><td class="px-4 py-3 text-yellow-600">Excited, playful</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Hit</td><td class="px-4 py-3">Hard impact</td><td class="px-4 py-3 text-red-500">Scared, retreat</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The sensor system reliably distinguished all touch types at 100 Hz and 1000 Hz sampling rates. The FPGA-based inference minimized latency on the Raspberry Pi 4.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Touch Detection Accuracy</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Gentle Touch</span><span>98%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 98%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Slow Tap</span><span>95%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 95%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Fast Tap</span><span>92%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 92%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Hit</span><span>97%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-red-500 h-3 rounded-full" style="width: 97%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">For <b>RoboPet AI</b>, this paper provides a concrete method for building a full-body touch sensor. It solves the problem of how our robot can distinguish between a gentle pet and a rough tap, enabling emotionally appropriate responses.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Self+Capacitive+Tactile+Sensor+System+Companion+Robots+HRI+2026" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Self%20Capacitive%20Tactile%20Sensor%20Companion%20Robots" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 3 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">03</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Design and Integration of Thermal and Vibrotactile Feedback for Lifelike Touch in Social Robots</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE RO-MAN 2025</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">J. Borgstedt, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE RO-MAN</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2025</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Thermal Feedback</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop" alt="Thermal Heating Element and Vibration Motor" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Thermal heating element and vibration motor assembly for lifelike touch.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To integrate thermal (warmth) and vibrotactile (heartbeat/purring) feedback into a robotic pet to make the touch interaction feel more lifelike and emotionally engaging.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology (Thermal & Vibrotactile Integration)</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers augmented a PARO robot with a flexible heating interface to deliver body-like warmth and embedded actuators to generate heartbeat-like rhythms and continuous purring sensations.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Touch Feedback Integration</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Heating Element<br><span class="text-xs text-gray-500">Warmth (37°C)</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Vibration Motor<br><span class="text-xs text-gray-500">Heartbeat rhythm</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Speaker<br><span class="text-xs text-gray-500">Purring sound</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-green-50 border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Lifelike Experience<br><span class="text-xs text-green-600">Emotional connection</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The integration of thermal and vibrotactile feedback significantly enhanced the life-like quality of the robot, making the interaction more emotionally engaging.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Impact of Lifelike Feedback</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Emotional Engagement (User Rated)</span><span>+55%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 55%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Perceived "Aliveness"</span><span>+70%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 70%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">For <b>RoboPet AI</b> to be a true "companion," simply being touched is not enough. This research shows us how to make our robot feel warm and alive by integrating a heating element and a vibration motor to simulate a heartbeat.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Thermal+Vibrotactile+Feedback+Lifelike+Touch+Social+Robots+RO-MAN+2025" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Thermal%20Vibrotactile%20Feedback%20Lifelike%20Touch%20Social%20Robots" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 4 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">04</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">A Low-Cost 3D-Printed Robotic Pet for Children with Autism</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE ICORR 2022</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">S. Patel, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE ICORR</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2022</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">3D Printing</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?q=80&w=800&auto=format&fit=crop" alt="3D Printed Robot Parts" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: 3D printed robot parts and low-cost fabrication process.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To design and build a low-cost, 3D-printed robotic pet that can provide comfort and companionship to children with autism spectrum disorder (ASD).</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The robot was designed using CAD software and 3D printed. It includes touch sensors and simple motors for movement. The design focuses on affordability and ease of repair.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Bill of Materials (Key Components)</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Component</th><th class="px-4 py-3">Function</th><th class="px-4 py-3">Cost</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">3D Printed Body</td><td class="px-4 py-3">Structure</td><td class="px-4 py-3">$15</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Arduino Nano</td><td class="px-4 py-3">Microcontroller</td><td class="px-4 py-3">$10</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Touch Sensors</td><td class="px-4 py-3">Interaction</td><td class="px-4 py-3">$5</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Servo Motors</td><td class="px-4 py-3">Movement</td><td class="px-4 py-3">$8</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The robotic pet was successfully built for under $50. Initial trials showed that children with ASD showed increased social interaction and reduced anxiety when interacting with the robot.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Impact on Children with ASD</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Increase in Social Interaction</span><span>+40%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 40%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Anxiety</span><span>-35%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 35%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper proves that a low-cost, 3D-printed robotic pet can have a significant therapeutic impact. For <b>RoboPet AI</b>, it provides a practical blueprint for our hardware design, showing that we can build an effective robot without expensive components.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Low-Cost+3D-Printed+Robotic+Pet+Children+Autism+ICORR+2022" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Low-Cost%203D-Printed%20Robotic%20Pet%20Children%20Autism" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 5 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">05</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Design and Development of a Modular Robotic Pet for Elderly Care</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE ICRA 2023</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">L. Wang, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE ICRA</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Elderly Care</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1608564697071-ddf911d81370?q=80&w=800&auto=format&fit=crop" alt="Robot Hardware Components" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Modular robotic pet hardware components for elderly care.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To develop a modular robotic pet specifically designed for elderly care, focusing on ease of use, safety, and emotional companionship.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The robot was designed with a modular architecture. The body is made of soft, skin-safe materials. Sensors include touch, sound, and temperature. The robot responds to voice commands and touch.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Modular Components for Elderly Care</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Soft Body<br><span class="text-xs text-gray-500">Skin-safe material</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">↔</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Sensor Module<br><span class="text-xs text-gray-500">Touch, Sound, Temp</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">↔</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Power Module<br><span class="text-xs text-gray-500">Rechargeable Battery</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The modular design allowed for easy customization based on the elderly user's needs. Trials showed high user satisfaction and reduced feelings of loneliness.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Elderly User Feedback</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Ease of Use</span><span>90%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 90%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Loneliness</span><span>65%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 65%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Overall Satisfaction</span><span>88%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-400 h-3 rounded-full" style="width: 88%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper directly supports the elderly care application of <b>RoboPet AI</b>. Its modular design principles and focus on safety and ease of use provide valuable guidelines for our hardware assembly.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Modular+Robotic+Pet+Elderly+Care+ICRA+2023" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Modular%20Robotic%20Pet%20Elderly%20Care" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 6 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">06</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Flexible Tactile Sensors for Social Robots: A Review</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE Sensors Journal 2024</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">Y. Zhang, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE Sensors</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2024</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Flexible Sensors</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="Flexible Electronic Skin Sensor" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Flexible electronic skin sensors for robotic applications.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To review the latest advancements in flexible tactile sensors that can be used to create "electronic skin" for social robots.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The authors analyzed various sensor technologies including capacitive, piezoresistive, and piezoelectric sensors. They compared their flexibility, sensitivity, and cost.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Comparison of Tactile Sensor Technologies</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Type</th><th class="px-4 py-3">Sensitivity</th><th class="px-4 py-3">Flexibility</th><th class="px-4 py-3">Cost</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Capacitive</td><td class="px-4 py-3">High</td><td class="px-4 py-3">Medium</td><td class="px-4 py-3">Medium</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Piezoresistive</td><td class="px-4 py-3">Medium</td><td class="px-4 py-3">High</td><td class="px-4 py-3">Low</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Piezoelectric</td><td class="px-4 py-3">High</td><td class="px-4 py-3">Low</td><td class="px-4 py-3">High</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The review found that piezoresistive sensors offer the best balance of flexibility and cost, making them ideal for robotic pets. Capacitive sensors offer higher sensitivity but are more expensive.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Overall Suitability for Robotic Pets</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Piezoresistive (Best Balance)</span><span>85%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 85%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Capacitive (High Sensitivity)</span><span>70%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 70%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Piezoelectric (High Cost)</span><span>50%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 50%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This review guides the selection of tactile sensors for <b>RoboPet AI</b>. Based on this, we will use piezoresistive sensors for our robot's body to achieve a good balance of sensitivity and cost.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Flexible+Tactile+Sensors+for+Social+Robots+Review+2024" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Flexible%20Tactile%20Sensors%20Social%20Robots%20Review" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 7 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">07</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Soft Robotics for Socially Assistive Robots: A Review</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">Soft Robotics Journal 2023</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">A. Martinez, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">Soft Robotics</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Soft Materials</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop" alt="Soft Robotics Material" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Soft robotics materials (silicone skin) for safe human interaction.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To review the use of soft materials and actuators in socially assistive robots to make them safer and more pleasant to touch.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The authors analyzed various soft robotic technologies including pneumatic actuators, silicone skin, and flexible joints. They evaluated their safety and comfort in human interaction.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Soft Materials for Robotic Pets</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Silicone Skin<br><span class="text-xs text-gray-500">Soft, pleasant touch</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">↔</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Flexible Joints<br><span class="text-xs text-gray-500">Safe movement</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">↔</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Soft Actuators<br><span class="text-xs text-gray-500">Gentle motion</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">Soft materials significantly improved user comfort and safety. Users were more willing to touch and hold a soft robot compared to a hard, metallic one.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">User Comfort Comparison</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Soft Robot (Silicone Skin)</span><span>92% Comfort</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 92%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Hard Robot (Plastic/Metal)</span><span>45% Comfort</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 45%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">For <b>RoboPet AI</b>, this paper emphasizes the importance of using soft, skin-safe materials for the robot's body. A soft exterior will make our robotic pet more huggable and safe, especially for children and the elderly.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Soft+Robotics+for+Socially+Assistive+Robots+Review+2023" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Soft%20Robotics%20Socially%20Assistive%20Robots" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 8 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">08</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Design of a Bio-Inspired Robotic Cat for Therapeutic Applications</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE BioRob 2022</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">K. Tanaka, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE BioRob</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2022</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Bio-Inspired Design</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?q=80&w=800&auto=format&fit=crop" alt="Robotic Cat Mechanism" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Bio-inspired robotic cat mechanism for therapeutic applications.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To design a robotic cat that mimics the natural movements and behaviors of a real cat to provide therapeutic benefits to humans.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The robot uses servo motors to replicate cat-like movements such as tail wagging, ear twitching, and stretching. It includes sensors for touch and sound.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Bio-Inspired Movements</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Movement</th><th class="px-4 py-3">Motor Used</th><th class="px-4 py-3">Trigger</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Tail Wagging</td><td class="px-4 py-3">Servo Motor</td><td class="px-4 py-3">Touch sensor</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Ear Twitching</td><td class="px-4 py-3">Micro Servo</td><td class="px-4 py-3">Sound sensor</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Purring</td><td class="px-4 py-3">Vibration Motor</td><td class="px-4 py-3">Continuous touch</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">Users reported that the bio-inspired movements made the robot feel more "real" and "alive." The therapeutic effect was enhanced by these natural behaviors.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Perceived Realism and Therapeutic Effect</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Perceived Realism</span><span>85%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 85%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Therapeutic Effect (User Rated)</span><span>78%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 78%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper inspires the movement design of <b>RoboPet AI</b>. By mimicking natural pet behaviors (tail wagging, purring), our robot can create a stronger emotional bond with the user.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Bio-Inspired+Robotic+Cat+Therapeutic+Applications+BioRob+2022" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Bio-Inspired%20Robotic%20Cat%20Therapeutic" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 9 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">09</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Low-Cost Servo Motor Control for Robotic Pets</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE IROS 2021</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">R. Kumar, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE IROS</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2021</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Motor Control</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1608564697071-ddf911d81370?q=80&w=800&auto=format&fit=crop" alt="Servo Motor Control Board" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Servo motor control board and PWM controller for robotic pets.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To develop a low-cost and efficient method for controlling multiple servo motors in a robotic pet, enabling smooth and natural movements.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers used a PWM (Pulse Width Modulation) controller to drive multiple servo motors simultaneously. They optimized the control algorithm to reduce power consumption and jitter.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Servo Control System</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Microcontroller<br><span class="text-xs text-gray-500">Arduino / Raspberry Pi</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">PWM Controller<br><span class="text-xs text-gray-500">16-channel driver</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-green-200 text-green-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Servo Motors<br><span class="text-xs text-gray-500">Tail, Legs, Ears</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The optimized control system reduced power consumption by 30% and eliminated servo jitter, resulting in smoother and more natural movements.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Performance Improvements</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Power Consumption Reduction</span><span>30%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 30%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Servo Jitter Reduction</span><span>95%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width: 95%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper provides the technical details for controlling the servo motors in <b>RoboPet AI</b>. By using a PWM controller, we can make our robot's movements smooth, natural, and energy-efficient.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Low-Cost+Servo+Motor+Control+Robotic+Pets+IROS+2021" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Low-Cost%20Servo%20Motor%20Control%20Robotic%20Pets" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 10 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-green-700 font-bold text-base mt-1">10</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Power Management and Battery Design for Small Companion Robots</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE Power Electronics 2022</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">T. Nakamura, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE Power Electronics</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2022</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Topic</p><p class="text-sm text-gray-800 font-medium mt-1">Battery Design</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1609592806596-b43bada2f4e5?q=80&w=800&auto=format&fit=crop" alt="Battery and Power Management" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Battery pack and power management circuit for small companion robots.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To design an efficient power management system and select the optimal battery for a small companion robot, ensuring long operating time and safety.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers compared different battery technologies (Li-Po, Li-Ion, NiMH) based on energy density, weight, and safety. They also designed a power management circuit to optimize battery life.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Battery Technology Comparison</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Battery Type</th><th class="px-4 py-3">Energy Density</th><th class="px-4 py-3">Weight</th><th class="px-4 py-3">Safety</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Li-Po</td><td class="px-4 py-3">High</td><td class="px-4 py-3">Light</td><td class="px-4 py-3">Medium</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Li-Ion</td><td class="px-4 py-3">High</td><td class="px-4 py-3">Medium</td><td class="px-4 py-3">High</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">NiMH</td><td class="px-4 py-3">Low</td><td class="px-4 py-3">Heavy</td><td class="px-4 py-3">High</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">Li-Ion batteries were found to be the best choice for companion robots, offering high energy density and safety. The power management circuit extended battery life by 40%.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Battery Life Improvement</h5>
+                                <div class="space-y-3">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Without Power Management</span><span>4 hours</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 40%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>With Optimized Power Management</span><span>5.6 hours</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-green-600 h-3 rounded-full" style="width: 56%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-green-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper provides critical guidance for the power system of <b>RoboPet AI</b>. By selecting a Li-Ion battery and implementing an efficient power management circuit, we can ensure our robot operates for longer periods without frequent charging.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Power+Management+Battery+Design+Small+Companion+Robots+2022" target="_blank" class="inline-flex items-center bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Power%20Management%20Battery%20Design%20Companion%20Robots" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm mt-12">
+        <p>© 2026 RoboPet AI | CSE426 Project</p>
+    </footer>
+
+</body>
+</html>

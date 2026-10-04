@@ -4,91 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | RoboPet AI</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900">
 
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50 py-4">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-600">RoboPet AI.</h1>
-            
-            <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-                <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-600">About</a></li>
-                <li><a href="hardware.html" class="hover:text-blue-600">Hardware</a></li>
-                <li><a href="software.html" class="hover:text-blue-600">Software</a></li>
-                <li><a href="literature.html" class="hover:text-blue-600">Literature Review</a></li>
-                <li><a href="team.html" class="hover:text-blue-600">Team</a></li>
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-700">RoboPet AI.</h1>
+            <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-700">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-700 font-bold text-blue-700">About</a></li>
+                <li><a href="weekly.html" class="hover:text-blue-700">Weekly Update</a></li>
+                <li><a href="hardware.html" class="hover:text-blue-700">Hardware</a></li>
+                <li><a href="software.html" class="hover:text-blue-700">Software</a></li>
+                <li><a href="literature.html" class="hover:text-blue-700">Literature Review</a></li>
+                <li><a href="team.html" class="hover:text-blue-700">Team</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="py-20 min-h-screen">
-        <div class="max-w-5xl mx-auto px-6">
-            
-            <!-- Section Title -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">About RoboPet AI</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto text-lg">
-                    Bridging the gap between technology and emotional connection.
-                </p>
-            </div>
-
-            <!-- Project Description (Abstract) -->
-            <div class="bg-white p-8 md:p-10 rounded-xl shadow-sm border border-gray-100 mb-16">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Abstract</h3>
-                <p class="text-gray-600 leading-relaxed text-lg text-justify mb-6">
-                    <b>RoboPet AI</b> is an innovative AI-driven robotic pet designed to serve as a smart, empathetic companion. In today's fast-paced digital world, loneliness and lack of interactive engagement are growing concerns. Traditional toys lack the intelligence to provide meaningful companionship or adapt to a user's emotional needs.
-                </p>
-                <p class="text-gray-600 leading-relaxed text-lg text-justify">
-                    By leveraging Artificial Intelligence, Natural Language Processing (NLP), and smart sensors, our robot interacts with users, detects their emotional state, and engages them in interactive storytelling. It serves as a friendly presence for children and the elderly, promoting mental well-being and offering a unique interactive experience.
-                </p>
-            </div>
-
-            <!-- What Our Robot Does (Key Features) -->
-            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">What Our Robot Does</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                    <div class="text-blue-500 text-5xl mb-4">🗣️</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Voice Interaction</h4>
-                    <p class="text-gray-600 text-sm">
-                        Uses AI and NLP to understand voice commands and respond naturally, just like a real pet.
-                    </p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                    <div class="text-blue-500 text-5xl mb-4">📖</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Interactive Storytelling</h4>
-                    <p class="text-gray-600 text-sm">
-                        Engages users by narrating stories and adapting the plot based on the user's choices.
-                    </p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                    <div class="text-blue-500 text-5xl mb-4">❤️</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Smart Companion</h4>
-                    <p class="text-gray-600 text-sm">
-                        Detects touch and movement, providing emotional support and companionship to reduce loneliness.
-                    </p>
-                </div>
-            </div>
-
+    <!-- HERO SECTION (IMAGE_1) -->
+    <section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjarVDmWUbxkF6j24pxFKksZE_wEq830KVW4nDYDGpbSfgz2K40iHKNMQ&s=10" alt="RoboPet Hero" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/85 via-gray-900/60 to-gray-900/40"></div>
         </div>
-    </main>
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <span class="inline-block bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider">ABOUT PROJECT</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                Not Just a Toy.<br>
+                <span class="text-blue-400">A Living Companion.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                RoboPet AI is an AI-driven robotic pet designed to provide emotional support, interactive storytelling, and companionship for children and the elderly.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABSTRACT SECTION (IMAGE_2) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Abstract</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4 text-justify">
+                        <b>RoboPet AI</b> is an innovative AI-driven robotic pet designed to bridge the emotional gap in our increasingly digital world. By leveraging Artificial Intelligence, Natural Language Processing (NLP), and smart sensors, RoboPet AI interacts with users, detects their emotional state, and engages them in interactive storytelling.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4 text-justify">
+                        Unlike traditional toys and basic robotic devices, our robot provides meaningful companionship through lifelike warmth, adaptive storytelling, and emotion-aware touch responses. It serves as a smart, empathetic companion for children and the elderly, promoting mental well-being.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-justify">
+                        This project focuses on the seamless integration of hardware and software to create a compact, affordable, and highly responsive robotic companion that feels alive and attentive to its owner.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://cdn.shopify.com/s/files/1/0750/4170/2077/files/ScreenShot_2025-12-26_163920_644_6d52d138-05d5-40f1-8fb5-e78ba2cf51cb.jpg?v=1767337706" alt="Robotic Pet Concept" class="w-full h-96 object-cover rounded-2xl shadow-xl border-4 border-blue-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW (IMAGE_3, IMAGE_4) -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Project Overview</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A glimpse into what RoboPet AI looks like and how it interacts with users.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt8SNa8qHQWU8nwVRxexeEUQ8hbHRP3DmjV-CEVxW0A&s=10" alt="Robot with Elderly" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvh1OqOAv5Wjk-GCYnWmHnpG2VtHviut_fn3mwjG69A&s=10" alt="Robot with Child" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUENESS SECTION (IMAGE_5 to IMAGE_9) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-4 py-1.5 rounded-full mb-4 tracking-wider">OUR UNIQUENESS</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Makes RoboPet AI Unique?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Five features that separate us from every other robotic pet in the market.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Feature 1 (IMAGE_5) -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUy7GBG5fwWeEcKT75eUvet37yv-bdXTRwCFu0NFXmA&s" alt="Warmth & Heartbeat" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-3xl mb-3">❤️</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Lifelike Warmth & Heartbeat</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Equipped with a heating element and vibration motor, our robot provides actual warmth (37°C) and heartbeat-like vibrations when hugged, creating a true emotional connection.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 (IMAGE_6) -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8wwfxjx2Vsz-okp0P3L8A18jTXe2078g3H4lYKrmjA&s=10" alt="Adaptive Storytelling" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-3xl mb-3">📖</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Adaptive Storytelling</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Powered by Large Language Models (LLMs), our robot generates stories in real-time. If a user changes the plot, the robot adapts instantly — unlike scripted toys.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 (IMAGE_7) -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRazZcHH1XAuTkFLy9BWaoEo_Fjofy6qvArRdj6IgBwg&s=10" alt="Emotion-Aware Touch" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-3xl mb-3">🖐️</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Emotion-Aware Touch</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Self-capacitive tactile sensors allow the robot to distinguish between gentle petting and rough tapping. It reacts with happiness or fear, mimicking a real pet.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 (IMAGE_8) -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB0iv0rJJ8H_ltFYNRierPdFiK2vY98ZG_H6B-u_AUg&s=10" alt="Modular Design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-3xl mb-3">🔧</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Modular & Low-Cost</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Our robot's modular design means a broken sensor can be replaced individually. Target budget: ৮,০০০-১০,০০০ BDT — affordable for everyone.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 (IMAGE_9) -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FNO_jHfOc91gVUwALiDZUabs76g-qb0nsttD5Mcsbw&s=10" alt="Mental Well-being" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-3xl mb-3">💚</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Mental Well-being Focus</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Research shows robotic pets reduce anxiety and heart rate. RoboPet AI is designed as a therapeutic companion for children and the elderly, not just a toy.</p>
+                    </div>
+                </div>
+
+                <!-- Bonus Card -->
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="p-8 h-full flex flex-col justify-center text-white">
+                        <div class="text-3xl mb-3">🚀</div>
+                        <h3 class="text-xl font-bold mb-2">The Future of Companionship</h3>
+                        <p class="text-blue-100 text-sm leading-relaxed mb-4">RoboPet AI is not just a project — it is a vision for a smarter, more empathetic future where technology truly understands human emotions.</p>
+                        <a href="team.html" class="inline-block bg-white text-blue-700 font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gray-100 transition self-start">Meet Our Team →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGET USERS (IMAGE_10, IMAGE_11, IMAGE_12) -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Who Is It For?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">RoboPet AI is designed to serve different age groups with unique needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Children (IMAGE_10) -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5xA0qdgGb9ouz_g_5l85rL2yQqPyZK7QlG4oS275Zg&s=10" alt="Children" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center">
+                        <div class="text-4xl mb-3">🧒</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Children</h3>
+                        <p class="text-gray-600 text-sm">Boosts creativity, language skills, and imagination through interactive storytelling.</p>
+                    </div>
+                </div>
+
+                <!-- Elderly (IMAGE_11) -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4nfT5AdFBk9oJ3P1IHg_rFVAk4xzXrZNBbdfp28UiA&s=10" alt="Elderly" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center">
+                        <div class="text-4xl mb-3">👴</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Elderly</h3>
+                        <p class="text-gray-600 text-sm">Reduces loneliness, lowers anxiety, and provides warm companionship in daily life.</p>
+                    </div>
+                </div>
+
+                <!-- Adults (IMAGE_12) -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-e_Vi-sXm8afItAdJiP-0NAu6Ml7quZaXYqp5OVWNw&s=10" alt="Adults" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center">
+                        <div class="text-4xl mb-3">🧑</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Adults</h3>
+                        <p class="text-gray-600 text-sm">A calming companion to reduce stress after a busy day. Perfect for desk-side therapy.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY (IMAGE_13 to IMAGE_20 - Unsplash fallback) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Project Gallery</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A visual journey into the world of RoboPet AI.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1546776310-eef45dd6d63c?q=80&w=800&auto=format&fit=crop" alt="Gallery 1" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?q=80&w=800&auto=format&fit=crop" alt="Gallery 2" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="Gallery 3" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop" alt="Gallery 4" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="Gallery 5" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=800&auto=format&fit=crop" alt="Gallery 6" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1608564697071-ddf911d81370?q=80&w=800&auto=format&fit=crop" alt="Gallery 7" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="rounded-xl overflow-hidden shadow-md group"><img src="https://images.unsplash.com/photo-1609592806596-b43bada2f4e5?q=80&w=800&auto=format&fit=crop" alt="Gallery 8" class="w-full h-40 object-cover group-hover:scale-110 transition duration-500"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-20 bg-gradient-to-r from-blue-700 to-indigo-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Explore Our Project</h2>
+            <p class="text-blue-100 mb-8 text-lg">Discover the hardware, software, and research behind RoboPet AI.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="hardware.html" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition shadow-lg">View Hardware</a>
+                <a href="software.html" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition shadow-lg">View Software</a>
+                <a href="literature.html" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition shadow-lg">Literature Review</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm">
         <p>© 2026 RoboPet AI | CSE426 Project</p>
     </footer>
 

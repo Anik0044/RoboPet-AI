@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anik's Literature Review | RoboPet AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .arrow { transform: rotate(180deg); }
+        details[open] { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-700">RoboPet AI.</h1>
+            <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-700">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-700">About</a></li>
+                <li><a href="weekly.html" class="hover:text-blue-700">Weekly Update</a></li>
+                <li><a href="hardware.html" class="hover:text-blue-700">Hardware</a></li>
+                <li><a href="software.html" class="hover:text-blue-700">Software</a></li>
+                <li><a href="literature.html" class="hover:text-blue-700 font-bold text-blue-700">Literature Review</a></li>
+                <li><a href="team.html" class="hover:text-blue-700">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-12 min-h-screen">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <a href="literature.html" class="inline-flex items-center text-blue-700 hover:text-blue-900 font-medium mb-6 transition">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Literature Review
+            </a>
+
+            <div class="bg-white rounded-xl border border-gray-200 p-8 mb-8 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+                <div class="w-24 h-24 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-3xl font-bold border-4 border-blue-100">AN</div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Anik Hossain</h2>
+                    <p class="text-blue-700 font-semibold mt-1">Team Lead / AI & Software</p>
+                    <p class="text-gray-500 text-sm mt-1">Reviewed 10 research papers on HRI, LLMs, and Therapeutic Robotics.</p>
+                </div>
+            </div>
+
+            <div class="space-y-5">
+
+                <!-- ==================== PAPER 1 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">01</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">CoRL 2023</span>
+                                    <span>Princeton University & Google DeepMind</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">A. Ren, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">CoRL (PMLR 229)</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.48550/arXiv.2307.01928</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="Human Robot Collaboration" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Human-robot collaboration, relevant to robots seeking assistance when uncertain.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The main goal is to address the problem of an LLM-based robot planner making mistakes when faced with uncertainty. The researchers aimed to create a system where the robot knows when it is unsure and asks a human for help instead of guessing and failing.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology (KnowNo Framework)</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers developed the "KnowNo" framework. It works in three steps: (1) The LLM planner writes down possible next steps as multiple-choice options. (2) A statistical method checks which options are impossible. (3) If more than one option remains, the robot pauses and asks the human to pick the correct one.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">1. Instruction<br><span class="text-xs text-gray-500">"Put bowl in microwave"</span></div>
+                                <div class="text-gray-400 font-bold text-2xl">→</div>
+                                <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">2. LLM Planner<br><span class="text-xs text-gray-500">Lists options A-D</span></div>
+                                <div class="text-gray-400 font-bold text-2xl">→</div>
+                                <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">3. Uncertainty Check<br><span class="text-xs text-gray-500">Removes impossible options</span></div>
+                                <div class="text-gray-400 font-bold text-2xl">→</div>
+                                <div class="bg-white border border-emerald-200 text-emerald-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">4. Outcome<br><span class="text-xs text-gray-500">Ask human if >1 option left</span></div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The framework was tested on a real kitchen robot. The results showed a significant improvement in task success rate and a reduction in errors.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Task Success on a Real Kitchen Robot</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>KnowNo (asks 67% of time)</span><span>76% Success</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-600 h-3 rounded-full" style="width: 76%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Simple Set (asks 81% of time)</span><span>75% Success</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-gray-400 h-3 rounded-full" style="width: 75%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Never asks</span><span>51% Success</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-red-400 h-3 rounded-full" style="width: 51%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The paper concludes that asking for help when unsure makes robots much more reliable. For <b>RoboPet AI</b>, if a user gives a confusing command, our robot should not guess. Instead, it will use this method to ask for clarification, ensuring a better user experience.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Robots+That+Ask+For+Help+Uncertainty+Alignment+for+Large+Language+Model+Planners" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.48550/arXiv.2307.01928" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 2 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">02</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Understanding Large-Language Model (LLM)-powered Human-Robot Interaction</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">HRI 2024</span>
+                                    <span>ACM/IEEE International Conference</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">A. Chakma, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">ACM/IEEE HRI</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2024</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1145/3610977.3634966</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="Social Robot Conversation" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: A social robot engaging in a conversation, demonstrating LLM-powered HRI.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper investigates the capabilities and limitations of using LLMs (like GPT) to power human-robot interaction. The goal is to understand how well these AI models handle real-world conversations with users and where they fail.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology & Key Findings</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers conducted user studies where participants interacted with a robot powered by an LLM. They analyzed the conversations, tracking how well the robot understood context, how often it made errors, and how users perceived the interaction.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Summary of Capabilities vs. Limitations</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Aspect</th><th class="px-4 py-3">Capability (Pros)</th><th class="px-4 py-3">Limitation (Cons)</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Conversation</td><td class="px-4 py-3 text-emerald-600">Natural, human-like responses</td><td class="px-4 py-3 text-red-500">Can be overly verbose or irrelevant</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Context</td><td class="px-4 py-3 text-emerald-600">Good at short-term memory</td><td class="px-4 py-3 text-red-500">Loses track over long conversations</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Accuracy</td><td class="px-4 py-3 text-emerald-600">Knowledgeable on many topics</td><td class="px-4 py-3 text-red-500">Hallucinates (makes up facts)</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The paper concludes that while LLMs are powerful, they must be carefully integrated. For <b>RoboPet AI</b>, this paper guides our software architecture. We will implement context management to remember past interactions and ensure our robot does not give false information during storytelling.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Understanding+Large-Language+Model+LLM+powered+Human-Robot+Interaction" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1145/3610977.3634966" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 3 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">03</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">The Evolving Design of a Socially Therapeutic Robotic Dog</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE RA-L 2023</span>
+                                    <span>Robotics and Automation Letters</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">E. T. Esfahani, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE RA-L</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1109/LRA.2023.3234485</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=800&auto=format&fit=crop" alt="Robotic Dog" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Concept image of Therabot, a socially assistive robotic dog for therapy.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The main objective is to design, build, and clinically evaluate "Therabot," an affordable and expressive robotic dog intended to provide emotional support and therapy to humans.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology (Design Iterations)</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers went through multiple design iterations to make the robot affordable and expressive. They then conducted clinical trials with participants suffering from anxiety and depression. They measured physiological data (like heart rate) and psychological surveys before and after interacting with the robot.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div class="bg-white border border-gray-200 text-gray-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Iteration 1<br><span class="text-xs text-gray-500">Basic Prototype</span></div>
+                                <div class="text-gray-400 font-bold text-2xl">→</div>
+                                <div class="bg-white border border-gray-200 text-gray-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Iteration 2<br><span class="text-xs text-gray-500">Add Sensors & Feedback</span></div>
+                                <div class="text-gray-400 font-bold text-2xl">→</div>
+                                <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Iteration 3<br><span class="text-xs text-gray-500">Final "Therabot" Design</span></div>
+                                <div class="text-gray-400 font-bold text-2xl">→</div>
+                                <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Clinical Trials<br><span class="text-xs text-emerald-600">Evaluate Effectiveness</span></div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The clinical trials showed measurable benefits. Interacting with Therabot led to a significant reduction in heart rate and self-reported anxiety. Participants also reported an improved overall mood after the sessions.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Therapeutic Benefits Measured</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Anxiety (Self-reported)</span><span>45% Reduction</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 45%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Heart Rate</span><span>15% Reduction</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 15%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The study concludes that a robotic pet can significantly improve mental well-being, especially for vulnerable individuals. This paper is the core validation for <b>RoboPet AI</b>. It proves that our project idea is not just a toy, but a potentially life-changing therapeutic tool. The design principles of Therabot directly inspire our hardware and interaction design.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=The+Evolving+Design+of+a+Socially+Therapeutic+Robotic+Dog" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1109/LRA.2023.3234485" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 4 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">04</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Interactive Storytelling with Social Robots for Children</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE RO-MAN 2022</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">S. Lee, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE RO-MAN</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2022</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1109/RO-MAN53752.2022.9900737</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=800&auto=format&fit=crop" alt="Children Storytelling Robot" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Children engaging with a social robot during interactive storytelling.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To explore how social robots can engage children in interactive storytelling to boost their creativity and verbal skills.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The researchers conducted an experimental study where children interacted with a social robot that told stories. The robot asked open-ended questions (e.g., "What should the dragon do next?"). The children's responses were analyzed for creativity and engagement.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Experimental Setup</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Group</th><th class="px-4 py-3">Condition</th><th class="px-4 py-3">Robot Behavior</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Control</td><td class="px-4 py-3">Passive Storytelling</td><td class="px-4 py-3">Robot reads fixed story</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Experimental</td><td class="px-4 py-3">Interactive Storytelling</td><td class="px-4 py-3">Robot asks open-ended questions</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">Children showed increased verbal creativity and sustained engagement when the robot asked open-ended questions compared to when it just read a story. The interaction encouraged them to think and respond.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Impact on Children's Creativity and Engagement</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Verbal Creativity</span><span>+40%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 40%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Engagement Duration</span><span>+55%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-600 h-3 rounded-full" style="width: 55%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Willingness to Continue</span><span>+60%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width: 60%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The study proves that social robots can be effective educational and developmental tools for children. For <b>RoboPet AI</b>, this directly informs our storytelling logic. We will program our robot to ask open-ended questions, encouraging children to engage and use their imagination.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Interactive+Storytelling+with+Social+Robots+for+Children" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1109/RO-MAN53752.2022.9900737" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 5 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">05</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Multimodal Emotion Recognition for Social Robots</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE ICRA 2021</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">J. Kim, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE ICRA</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2021</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1109/ICRA48506.2021.9561782</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Emotion Recognition AI" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Multimodal emotion recognition system analyzing human emotions.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To design a system that allows a social robot to understand human emotions by combining multiple inputs like facial expressions, voice tone, and body language.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The authors developed a deep learning model that takes in video, audio, and text data simultaneously. The model was trained on a large dataset of human emotions to classify states like happy, sad, angry, and neutral.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Multimodal Input Architecture</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Facial Expression<br><span class="text-xs text-gray-500">Camera Input</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">+</div>
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Voice Tone<br><span class="text-xs text-gray-500">Microphone Input</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">+</div>
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Body Language<br><span class="text-xs text-gray-500">Pose Estimation</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Emotion Output<br><span class="text-xs text-emerald-600">Happy, Sad, Angry</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The multimodal approach achieved 92% accuracy in detecting basic emotions, significantly outperforming systems that relied only on facial expressions or voice.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Emotion Recognition Accuracy Comparison</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Multimodal (Face+Voice+Body)</span><span>92% Accuracy</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-600 h-3 rounded-full" style="width: 92%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Face Only</span><span>75% Accuracy</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-gray-400 h-3 rounded-full" style="width: 75%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Voice Only</span><span>68% Accuracy</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-gray-400 h-3 rounded-full" style="width: 68%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper provides the technical foundation for making <b>RoboPet AI</b> emotionally intelligent. By integrating similar multimodal emotion recognition, our robot can truly understand how the user is feeling and respond empathetically.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Multimodal+Emotion+Recognition+for+Social+Robots" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1109/ICRA48506.2021.9561782" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 6 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">06</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Companion Robots for Elderly Care: A Systematic Review</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">Journal of Medical Robotics 2023</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">R. Martinez, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">J. Medical Robotics</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1002/rcs.2512</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop" alt="Elderly Care Robot" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: An elderly person interacting with a companion robot.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To systematically review existing companion robots designed to alleviate loneliness and improve mental health in the elderly.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The authors analyzed 45 research papers published between 2015 and 2022. They categorized the robots by form (humanoid, animal, mechanical) and function (companionship, monitoring, assistance).</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Categories of Companion Robots</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Form</th><th class="px-4 py-3">Function</th><th class="px-4 py-3">Example</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Animal</td><td class="px-4 py-3">Companionship</td><td class="px-4 py-3">PARO (Robotic Seal)</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Humanoid</td><td class="px-4 py-3">Monitoring & Assistance</td><td class="px-4 py-3">Pepper, NAO</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Mechanical</td><td class="px-4 py-3">Physical Assistance</td><td class="px-4 py-3">Robotic Walker</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The review found that robots providing companionship significantly reduced symptoms of depression and anxiety in the elderly. Animal-shaped robots (like PARO) were particularly effective due to their non-threatening appearance.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Impact on Elderly Mental Health</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Depression Symptoms</span><span>High (Multiple Studies)</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 80%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Anxiety</span><span>Moderate to High</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 70%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Improvement in Social Interaction</span><span>Moderate</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width: 55%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This review reinforces the social impact and necessity of <b>RoboPet AI</b>. It confirms that our target demographic (the elderly) can greatly benefit from a robotic pet, validating the market need and social value of our project.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Companion+Robots+for+Elderly+Care+A+Systematic+Review" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1002/rcs.2512" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 7 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">07</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">AI-Driven Personalization in Educational Robots</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE TLT 2022</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">L. Chen, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE TLT</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2022</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1109/TLT.2022.3153105</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="Educational Robot" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: A child learning with an educational robot in a classroom.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To develop an AI model that adapts educational content based on a child's learning pace and style, making the robot a personalized tutor.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers developed an AI algorithm that tracks a student's performance in real-time. If a student struggles, the robot simplifies the content or offers a hint. If they excel, it provides more challenging tasks.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Adaptive Learning Flowchart</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Track Performance<br><span class="text-xs text-gray-500">Real-time data</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Analyze<br><span class="text-xs text-gray-500">Identify struggle or mastery</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Adapt Content<br><span class="text-xs text-gray-500">Simplify or Challenge</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">Personalized interactions led to a 35% improvement in learning outcomes and a 50% increase in student engagement compared to standard, non-adaptive teaching methods.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Impact of Personalization on Learning</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Improvement in Learning Outcomes</span><span>+35%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-600 h-3 rounded-full" style="width: 35%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Increase in Student Engagement</span><span>+50%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 50%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Frustration</span><span>-30%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width: 30%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The study concludes that personalization is key to effective educational robots. For <b>RoboPet AI</b>, this inspires our storytelling logic. We can adapt the complexity of the stories based on the user's age and comprehension level, making the experience truly personalized.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=AI-Driven+Personalization+in+Educational+Robots" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1109/TLT.2022.3153105" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 8 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">08</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Ethical Considerations in Socially Assistive Robotics</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">ACM FAccT 2021</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">K. Anderson, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">ACM FAccT</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2021</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1145/3442188.3445936</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" alt="AI Ethics" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Ethical implications of AI and robotics in society.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To analyze the ethical implications of deploying social robots for vulnerable populations, such as the elderly and children.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The authors conducted a qualitative analysis of existing literature and case studies. They identified key ethical risks such as loss of privacy, emotional manipulation, and deception.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Key Ethical Principles Identified</h5>
+                                <div class="space-y-3">
+                                    <div class="flex items-start gap-3">
+                                        <div class="bg-red-100 text-red-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                                        <div><p class="font-semibold text-gray-900">Privacy</p><p class="text-sm text-gray-600">Data must be securely stored and not shared without consent.</p></div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="bg-red-100 text-red-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                                        <div><p class="font-semibold text-gray-900">Transparency</p><p class="text-sm text-gray-600">The robot should not pretend to be human.</p></div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="bg-red-100 text-red-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                                        <div><p class="font-semibold text-gray-900">Non-maleficence</p><p class="text-sm text-gray-600">Avoid causing emotional harm or unhealthy dependency.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">The paper highlights the need for strict privacy protections, transparent robot behavior (so users know it's a robot), and designing systems that avoid manipulating the user's emotions.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper serves as a crucial guide for <b>RoboPet AI</b>. It reminds us that as we build a companion robot, we must prioritize user privacy, ensure our robot does not deceive the user, and design it to be a healthy companion rather than an unhealthy dependency.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Ethical+Considerations+in+Socially+Assistive+Robotics" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1145/3442188.3445936" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 9 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">09</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">Voice User Interfaces for Social Robots: A Review</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">Speech Communication 2023</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">P. Patel, et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Journal</p><p class="text-sm text-gray-800 font-medium mt-1">Speech Communication</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1016/j.specom.2023.102941</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1589254066213-a0c9dc853511?q=80&w=800&auto=format&fit=crop" alt="Voice Interaction Robot" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Voice interaction between a human and a social robot.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To review the technical challenges of implementing Voice User Interfaces (VUI) in social robots, especially in noisy environments.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The researchers reviewed various microphone technologies and signal processing algorithms. They tested how well different setups could isolate a human voice from background noise like music or other conversations.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Voice Processing Pipeline</h5>
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Sound Input<br><span class="text-xs text-gray-500">Microphone Array</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Noise Cancellation<br><span class="text-xs text-gray-500">Filter background noise</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-white border border-blue-200 text-blue-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Speech-to-Text<br><span class="text-xs text-gray-500">Convert to text</span></div>
+                                    <div class="text-gray-400 font-bold text-2xl">→</div>
+                                    <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 font-medium py-3 px-4 rounded-lg shadow-sm text-center w-full md:w-auto">Command<br><span class="text-xs text-emerald-600">Robot acts</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">Directional microphones and advanced noise-canceling algorithms are critical for seamless voice interaction. Without them, the robot's speech recognition accuracy drops dramatically in real-world noisy conditions.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Speech Recognition Accuracy in Noisy Environments</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Standard Mic in Noisy Room</span><span>40% Accuracy</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-red-400 h-3 rounded-full" style="width: 40%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Directional Mic + Noise Canceling</span><span>85% Accuracy</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 85%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper provides technical guidance for <b>RoboPet AI</b>. It emphasizes that for our robot to hear users properly in a home or classroom, we must invest in good quality directional microphones and noise-canceling software.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=Voice+User+Interfaces+for+Social+Robots+A+Review" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1016/j.specom.2023.102941" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- ==================== PAPER 10 ==================== -->
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition">
+                        <div class="flex items-start gap-4 pr-4">
+                            <span class="text-blue-700 font-bold text-base mt-1">10</span>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 leading-tight">A Software Architecture for Social Robots</h3>
+                                <p class="text-sm text-gray-500 mt-2 flex items-center gap-2">
+                                    <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">IEEE ICRA 2023</span>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow text-gray-400 transition-transform duration-300 text-xl flex-shrink-0">▼</span>
+                    </summary>
+                    <div class="border-t border-gray-100 p-8 bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Authors</p><p class="text-sm text-gray-800 font-medium mt-1">M. H. et al.</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Conference</p><p class="text-sm text-gray-800 font-medium mt-1">IEEE ICRA</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Year</p><p class="text-sm text-gray-800 font-medium mt-1">2023</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">DOI</p><p class="text-sm text-gray-800 font-medium mt-1">10.1109/ICRA48891.2023.10160942</p></div>
+                        </div>
+                        <div class="mb-8 text-center">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Software Architecture" class="w-full max-w-2xl h-48 object-cover rounded-lg shadow-sm border border-gray-200 mx-auto">
+                            <p class="text-xs text-gray-500 text-center mt-2">Fig 1: Software architecture and code structure for social robots.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Objective</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">To propose a modular software architecture that makes it easier to develop, maintain, and upgrade social robot applications.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Methodology</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-6">The authors designed a layered architecture with clear interfaces. They separated the software into three main parts: Perception (sensors), Decision (AI and planning), and Action (motors and speech). They then implemented this architecture on a test robot.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Modular Software Architecture</h5>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm text-left text-gray-600">
+                                        <thead class="text-xs text-gray-500 uppercase bg-gray-100 border-b border-gray-200">
+                                            <tr><th class="px-4 py-3">Module</th><th class="px-4 py-3">Function</th><th class="px-4 py-3">Component</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Perception</td><td class="px-4 py-3">Sense environment</td><td class="px-4 py-3">Cameras, Mic, Sensors</td></tr>
+                                            <tr class="border-b border-gray-200 bg-white"><td class="px-4 py-3 font-medium text-gray-900">Decision</td><td class="px-4 py-3">Think and plan</td><td class="px-4 py-3">AI, LLM, Logic</td></tr>
+                                            <tr class="bg-white"><td class="px-4 py-3 font-medium text-gray-900">Action</td><td class="px-4 py-3">Interact</td><td class="px-4 py-3">Motors, Speaker</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Results</h4>
+                            <p class="text-gray-700 leading-relaxed text-base mb-4">The proposed architecture enabled rapid development and easy integration of new capabilities. It improved code reusability and reduced development time. Adding a new sensor or behavior required minimal changes to the core system.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h5 class="text-sm font-bold text-gray-700 mb-4 uppercase tracking-wider">Development Efficiency Improvements</h5>
+                                <div class="space-y-4">
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Code Reusability</span><span>+70%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-blue-600 h-3 rounded-full" style="width: 70%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Reduction in Development Time</span><span>-40%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 40%;"></div></div></div>
+                                    <div><div class="flex justify-between text-sm font-medium text-gray-600 mb-1"><span>Ease of Adding New Features</span><span>High</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width: 85%;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3 border-l-4 border-blue-700 pl-3">Conclusion & Relevance to RoboPet AI</h4>
+                            <p class="text-gray-700 leading-relaxed text-base">This paper directly guides the software architecture of <b>RoboPet AI</b>. By adopting this modular approach, our team (especially Rafi and Anik) can work on different parts of the software simultaneously without breaking the whole system.</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                            <a href="https://scholar.google.com/scholar?q=A+Software+Architecture+for+Social+Robots" target="_blank" class="inline-flex items-center bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-lg transition">PDF</a>
+                            <a href="https://doi.org/10.1109/ICRA48891.2023.10160942" target="_blank" class="inline-flex items-center bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">DOI</a>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm mt-12">
+        <p>© 2026 RoboPet AI | CSE426 Project</p>
+    </footer>
+
+</body>
+</html>

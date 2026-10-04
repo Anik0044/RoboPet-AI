@@ -4,319 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literature Review | RoboPet AI</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; }
-        details[open] .arrow { transform: rotate(180deg); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900">
 
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50 py-4">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-600">RoboPet AI.</h1>
-            
-            <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-                <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-600">About</a></li>
-                <li><a href="weekly.html" class="hover:text-blue-600">Weekly Update</a></li>
-                <li><a href="hardware.html" class="hover:text-blue-600">Hardware</a></li>
-                <li><a href="software.html" class="hover:text-blue-600">Software</a></li>
-                <li><a href="literature.html" class="hover:text-blue-600">Literature Review</a></li>
-                <li><a href="team.html" class="hover:text-blue-600">Team</a></li>
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-700">RoboPet AI.</h1>
+            <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-700">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-700">About</a></li>
+                <li><a href="weekly.html" class="hover:text-blue-700">Weekly Update</a></li>
+                <li><a href="hardware.html" class="hover:text-blue-700">Hardware</a></li>
+                <li><a href="software.html" class="hover:text-blue-700">Software</a></li>
+                <li><a href="literature.html" class="hover:text-blue-700 font-bold text-blue-700">Literature Review</a></li>
+                <li><a href="team.html" class="hover:text-blue-700">Team</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="py-16 min-h-screen">
-        <div class="max-w-5xl mx-auto px-6">
+    <main class="py-20 min-h-screen">
+        <div class="max-w-6xl mx-auto px-6">
             
-            <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Literature Review</h2>
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Literature Review</h2>
+            <p class="text-center text-gray-500 mb-16">Select a team member to view their reviewed research papers.</p>
 
-            <!-- Member Tabs -->
-            <div class="flex flex-wrap gap-2 mb-10 border-b border-gray-200 pb-4 justify-center">
-                <button onclick="showMember('anik')" id="btn-anik" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-blue-600 text-white shadow-md">
-                    Anik
-                </button>
-                <button onclick="showMember('mariyam')" id="btn-mariyam" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
-                    Mariyam
-                </button>
-                <button onclick="showMember('rafi')" id="btn-rafi" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
-                    Rafi
-                </button>
-                <button onclick="showMember('chaity')" id="btn-chaity" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
-                    Chaity
-                </button>
-                <button onclick="showMember('gomes')" id="btn-gomes" class="tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200">
-                    Gomes
-                </button>
+            <!-- Member Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Anik -->
+                <a href="literature-anik.html" class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-blue-50">AN</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Anik Hossain</h3>
+                    <p class="text-blue-600 font-medium mb-2">Team Lead / AI & Software</p>
+                    <p class="text-gray-500 text-sm">10 Papers Reviewed</p>
+                </a>
+
+                <!-- Mariyam -->
+                <a href="literature-mariyam.html" class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-green-50">MA</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Mariyam Binte Al Kader</h3>
+                    <p class="text-green-600 font-medium mb-2">Second Leader / Hardware</p>
+                    <p class="text-gray-500 text-sm">10 Papers Reviewed</p>
+                </a>
+
+                <!-- Rafi -->
+                <a href="literature-rafi.html" class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-yellow-50">RA</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">AL-RAFI</h3>
+                    <p class="text-yellow-600 font-medium mb-2">Software & Web Developer</p>
+                    <p class="text-gray-500 text-sm">10 Papers Reviewed</p>
+                </a>
+
+                <!-- Chaity -->
+                <a href="literature-chaity.html" class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-purple-50">CH</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Chaity Saha</h3>
+                    <p class="text-purple-600 font-medium mb-2">Research & Documentation</p>
+                    <p class="text-gray-500 text-sm">10 Papers Reviewed</p>
+                </a>
+
+                <!-- Gomes -->
+                <a href="literature-gomes.html" class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 border-4 border-red-50">GO</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Jerome Aninda Gomes</h3>
+                    <p class="text-red-600 font-medium mb-2">Procurement & Presentation</p>
+                    <p class="text-gray-500 text-sm">10 Papers Reviewed</p>
+                </a>
+
             </div>
-
-            <!-- ================= ANIK'S PAPERS ================= -->
-            <div id="member-anik" class="member-content block">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-gray-800">Anik Hossain</h3>
-                    <p class="text-gray-500 text-sm">Team Lead / AI & Software</p>
-                </div>
-                <div class="space-y-4">
-                    <!-- Paper 1 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
-                                <span>Once Upon a Time…: an Adaptive Robotic Behavior for Engaging Cooperative Storytelling</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> A. Rossi, et al.</p>
-                            <p><strong>Published in:</strong> 2024 19th ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024.</p>
-                            <p><strong>Abstract:</strong> This research presents an adaptive cooperative storytelling framework for social robots. By integrating Large Language Models (LLMs), the robot acts as a co-creator of stories rather than a passive narrator. It processes real-time verbal and non-verbal user cues to dynamically alter the narrative arc, character traits, and emotional tones.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This paper provides a foundational architecture for implementing interactive storytelling in our project. It guides how our RoboPet AI can use user feedback to make storytelling dynamic and engaging.</p>
-                        </div>
-                    </details>
-                    <!-- Paper 2 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">02</span>
-                                <span>A Social Robot as a Storyteller: An Exploratory Study on the Role of Emotions</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> M. C. C. et al.</p>
-                            <p><strong>Published in:</strong> 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2023.</p>
-                            <p><strong>Abstract:</strong> This paper investigates the critical role of emotional expression in human-robot storytelling interactions. It explores how a robot's emotional cues (facial expressions, voice modulation, and body gestures) influence the user's emotional engagement and overall experience during a storytelling session.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> For our RoboPet AI to be an effective companion, it must not only tell stories but also express appropriate emotions. This paper highlights the importance of integrating emotional AI into our storytelling logic.</p>
-                        </div>
-                    </details>
-                    <!-- Paper 3 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">03</span>
-                                <span>The Evolving Design of a Socially Therapeutic Robotic Dog</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> E. T. Esfahani, et al.</p>
-                            <p><strong>Published in:</strong> IEEE Robotics and Automation Letters, vol. 8, no. 2, pp. 1-8, 2023.</p>
-                            <p><strong>Abstract:</strong> This paper details the iterative design and empirical evaluation of "Therabot," a socially assistive robotic dog intended for therapeutic applications. The study focuses on creating an affordable, expressive, and robust platform to provide emotional support and companionship.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This study validates the core concept of our project—that a robotic pet can significantly improve mental well-being. The physical and interaction design principles of Therabot provide valuable insights for building our own companion robot.</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-
-            <!-- ================= MARIYAM'S PAPERS ================= -->
-            <div id="member-mariyam" class="member-content hidden">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-gray-800">Mariyam Binte Al Kader</h3>
-                    <p class="text-gray-500 text-sm">Second Leader / Hardware & Assembly</p>
-                </div>
-                <div class="space-y-4">
-                    <!-- Paper 1 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
-                                <span>Introducing M: A Modular, Modifiable Social Robot</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> V. N. Antony, Z. Gong, Y. Kim, and C.-M. Huang</p>
-                            <p><strong>Published in:</strong> 2025 IEEE International Conference on Robotics and Automation (ICRA), 2025.</p>
-                            <p><strong>Abstract:</strong> This paper presents M, an open-source, low-cost social robot platform designed to reduce the friction in social robotics research by making robots easier to reproduce, modify, and deploy in real-world settings. M combines a modular mechanical design, multimodal sensing, and an expressive yet mechanically simple actuation architecture.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This paper is extremely valuable for our hardware design. It provides a blueprint for creating a low-cost, modular, and easily repairable body for RoboPet AI.</p>
-                        </div>
-                    </details>
-                    <!-- Paper 2 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">02</span>
-                                <span>Self Capacitive Tactile Sensor System designed for Companion Robots</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> M. Ali, S. Ikemoto, et al.</p>
-                            <p><strong>Published in:</strong> 2026 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2026.</p>
-                            <p><strong>Abstract:</strong> This paper addresses the challenge of designing tactile sensing systems for humanoid robots. The authors present a simple, scalable, and hardware-friendly tactile sensing system for a companion humanoid robot based on the self-capacitance principle.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> For our robot to feel "alive," it must respond to touch. This paper provides a concrete, low-cost method for building a full-body touch sensor for RoboPet AI.</p>
-                        </div>
-                    </details>
-                    <!-- Paper 3 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">03</span>
-                                <span>Design and Integration of Thermal and Vibrotactile Feedback for Lifelike Touch in Social Robots</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> J. Borgstedt, M. Iovino, et al.</p>
-                            <p><strong>Published in:</strong> 2025 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2025.</p>
-                            <p><strong>Abstract:</strong> This paper presents a multimodal tactile prototype that integrates thermal and vibrotactile feedback to simulate biophysiological signals like warmth and heartbeat. It augments a robot with a flexible heating interface and embedded actuators.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This paper takes the concept of a robotic pet to the next level. It shows us how to make our robot feel warm and alive, enhancing the emotional connection.</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-
-            <!-- ================= RAFI'S PAPERS ================= -->
-            <div id="member-rafi" class="member-content hidden">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-gray-800">AL-RAFI</h3>
-                    <p class="text-gray-500 text-sm">Software & Web Developer</p>
-                </div>
-                <div class="space-y-4">
-                    <!-- Paper 1 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
-                                <span>A Software Architecture for Social Robots</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> M. H. et al.</p>
-                            <p><strong>Published in:</strong> 2023 IEEE International Conference on Robotics and Automation (ICRA), 2023.</p>
-                            <p><strong>Abstract:</strong> Proposes a modular software architecture for social robots, emphasizing the integration of perception, decision-making, and action modules. The architecture supports flexible development and deployment of complex robotic behaviors.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> This paper directly guides the software architecture of our project, providing a framework to structure our Python and AI modules.</p>
-                        </div>
-                    </details>
-                    <!-- Paper 2 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">02</span>
-                                <span>Web-based Teleoperation and Monitoring System for Mobile Robots</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> K. S. et al.</p>
-                            <p><strong>Published in:</strong> 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022.</p>
-                            <p><strong>Abstract:</strong> Presents a web-based framework using WebSockets and ROS for real-time teleoperation and monitoring of robots. It allows users to control robots and view sensor data through a standard web browser.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> Supports Rafi's web development role, showing how to connect our website interface to the robot's backend for remote interaction and monitoring.</p>
-                        </div>
-                    </details>
-                    <!-- Paper 3 -->
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">03</span>
-                                <span>Integrating Large Language Models into Robotic Systems for Improved Human-Robot Interaction</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> L. W. et al.</p>
-                            <p><strong>Published in:</strong> 2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024.</p>
-                            <p><strong>Abstract:</strong> Explores the integration of LLMs (like GPT) into robot software stacks, allowing for natural language understanding and generation. The study focuses on prompt engineering and context management for robotic tasks.</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> Essential for our robot's conversational abilities. This paper provides practical insights into how we can use APIs to make our robot talk and understand users naturally.</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-
-            <!-- ================= CHAITY'S PAPERS (Template) ================= -->
-            <div id="member-chaity" class="member-content hidden">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-gray-800">Chaity Saha</h3>
-                    <p class="text-gray-500 text-sm">Research & Documentation</p>
-                </div>
-                <div class="space-y-4">
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
-                                <span>[Insert Paper 1 Title Here]</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> [Insert Authors]</p>
-                            <p><strong>Published in:</strong> [Insert Journal/Conference, Year]</p>
-                            <p><strong>Abstract:</strong> [Insert Detailed Abstract Here]</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> [Insert Relevance Here]</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-
-            <!-- ================= GOMES' PAPERS (Template) ================= -->
-            <div id="member-gomes" class="member-content hidden">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-gray-800">Jerome Aninda Gomes</h3>
-                    <p class="text-gray-500 text-sm">Procurement & Presentation</p>
-                </div>
-                <div class="space-y-4">
-                    <details class="group bg-white border border-gray-200 rounded-lg p-5 cursor-pointer transition hover:border-blue-400 shadow-sm">
-                        <summary class="flex justify-between items-center font-semibold text-gray-800 text-lg">
-                            <span class="flex items-start gap-3">
-                                <span class="text-blue-500 font-bold text-sm mt-1">01</span>
-                                <span>[Insert Paper 1 Title Here]</span>
-                            </span>
-                            <span class="arrow text-gray-400 transition-transform duration-300">▼</span>
-                        </summary>
-                        <div class="mt-4 pl-8 text-sm text-gray-700 border-t pt-4 space-y-3">
-                            <p><strong>Authors:</strong> [Insert Authors]</p>
-                            <p><strong>Published in:</strong> [Insert Journal/Conference, Year]</p>
-                            <p><strong>Abstract:</strong> [Insert Detailed Abstract Here]</p>
-                            <p><strong>Relevance to RoboPet AI:</strong> [Insert Relevance Here]</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+    <footer class="bg-gray-900 text-white py-6 text-center text-sm mt-12">
         <p>© 2026 RoboPet AI | CSE426 Project</p>
     </footer>
-
-    <!-- JavaScript to handle Tab Switching -->
-    <script>
-        function showMember(memberId) {
-            document.querySelectorAll('.member-content').forEach(el => {
-                el.classList.add('hidden');
-                el.classList.remove('block');
-            });
-
-            const selectedSection = document.getElementById('member-' + memberId);
-            if (selectedSection) {
-                selectedSection.classList.remove('hidden');
-                selectedSection.classList.add('block');
-            }
-
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
-                btn.classList.add('bg-gray-100', 'text-gray-600', 'hover:bg-gray-200', 'border', 'border-gray-200');
-            });
-
-            const activeBtn = document.getElementById('btn-' + memberId);
-            if (activeBtn) {
-                activeBtn.classList.remove('bg-gray-100', 'text-gray-600', 'hover:bg-gray-200', 'border', 'border-gray-200');
-                activeBtn.classList.add('bg-blue-600', 'text-white', 'shadow-md');
-            }
-        }
-    </script>
 
 </body>
 </html>
